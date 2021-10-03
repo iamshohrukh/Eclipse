@@ -3,7 +3,8 @@ import { Button } from '../../globalStyles';
 import {
   FaInstagram,
   FaEnvelope,
-  FaPhoneSquareAlt
+  FaYoutube,
+  FaPhoneAlt
 } from 'react-icons/fa';
 import {
   FooterContainer,
@@ -17,7 +18,7 @@ import {
   WebsiteRights,
   SocialIcons,
   SocialIconLink
-} from './Footer.elements';
+} from './FooterElements';
 
 function Footer() {
   return (
@@ -39,11 +40,14 @@ function Footer() {
             <SocialIconLink href='https://instagram.com/eclipse_sat?utm_medium=copy_link' target='_blank' aria-label='Instagram'>
               <FaInstagram />
             </SocialIconLink>
-            <SocialIconLink mailto='' target='_blank' aria-label='Twitter'>
+            <SocialIconLink href='mailto:camsat.space@gmail.com' target='_blank' aria-label='Twitter'>
               <FaEnvelope />
             </SocialIconLink>
-            <SocialIconLink tel='+992918681717' target='_blank' aria-label='LinkedIn'>
-              <FaPhoneSquareAlt />
+            <SocialIconLink href='tel:+992918681717' target='_blank' aria-label='LinkedIn'>
+              <FaPhoneAlt />
+            </SocialIconLink>
+            <SocialIconLink href='https://www.youtube.com/channel/UC7sUQ1PBNEgguX2zHrqMXPg/featured' area-label='Youtube'>
+              <FaYoutube />
             </SocialIconLink>
           </SocialIcons>
         </SocialMediaWrap>
