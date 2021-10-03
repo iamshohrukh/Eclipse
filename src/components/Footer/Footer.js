@@ -36,13 +36,13 @@ function Footer() {
         <SocialMediaWrap>
           <WebsiteRights>ECLIPSE © 2021</WebsiteRights>
           <SocialIcons>
-            <SocialIconLink href='/' target='_blank' aria-label='Instagram'>
+            <SocialIconLink href='https://instagram.com/eclipse_sat?utm_medium=copy_link' target='_blank' aria-label='Instagram'>
               <FaInstagram />
             </SocialIconLink>
-            <SocialIconLink href='/' target='_blank' aria-label='Twitter'>
+            <SocialIconLink mailto='' target='_blank' aria-label='Twitter'>
               <FaEnvelope />
             </SocialIconLink>
-            <SocialIconLink href='/' target='_blank' aria-label='LinkedIn'>
+            <SocialIconLink tel='+992918681717' target='_blank' aria-label='LinkedIn'>
               <FaPhoneSquareAlt />
             </SocialIconLink>
           </SocialIcons>
