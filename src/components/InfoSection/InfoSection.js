@@ -40,7 +40,7 @@ function InfoSection({
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                <a href="https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v11.html?title=true&access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA#4.34/40.02/73.7" >
+                <a href="https://sppgway.jhuapl.edu/" >
                   <Button big fontBig primary={primary}>
                     {buttonFirst}
                   </Button>
