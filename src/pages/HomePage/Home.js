@@ -1,14 +1,17 @@
 import React from 'react';
 import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data';
 import { InfoSection } from '../../components';
+import InfoSectionBt  from "./InfoSectionBt";
+import InfoSectionBtSat  from "./InfoSectionBtSat";
+import InfoSectionBtF  from "./InfoSectionBtF";
 
 function Home() {
   return (
     <>
       <InfoSection {...homeObjOne} />
-      <InfoSection {...homeObjThree} />
-      <InfoSection {...homeObjTwo} />
-      <InfoSection {...homeObjFour} />
+      <InfoSectionBtSat {...homeObjThree} />
+      <InfoSectionBt {...homeObjTwo} />
+      <InfoSectionBtF {...homeObjFour} />
     </>
   );
 }

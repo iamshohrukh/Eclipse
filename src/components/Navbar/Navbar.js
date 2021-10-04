@@ -36,11 +36,6 @@ function Navbar() {
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='/products' onClick={closeMobileMenu}>
-                  Products
-                </NavLinks>
-              </NavItem>
-              <NavItem>
                 <NavLinks to='/next' onClick={closeMobileMenu}>
                   Next to Future
                 </NavLinks>

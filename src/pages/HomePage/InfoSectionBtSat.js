@@ -11,9 +11,10 @@ import {
   Img,
   // InfoSee,
   InfoSec
-} from './InfoSection.elements';
+} from '../../components/InfoSection/InfoSection.elements';
+import { Link } from 'react-router-dom';
 
-function InfoSection({
+function InfoSectionBt({
   primary,
   lightBg,
   topLine,
@@ -40,11 +41,11 @@ function InfoSection({
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                <a href="https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v11.html?title=true&access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA#4.34/40.02/73.7" >
+                <Link to='/satellite' >
                   <Button big fontBig primary={primary}>
                     {buttonFirst}
                   </Button>
-                </a>
+                </Link>
               </TextWrapper>
             </InfoColumn>
             <InfoColumn>
@@ -60,4 +61,4 @@ function InfoSection({
   );
 }
 
-export default InfoSection;
+export default InfoSectionBt;

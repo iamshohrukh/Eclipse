@@ -1,21 +1,15 @@
+import { Grid } from '@material-ui/core';
 import React from 'react';
-import { Button } from '../../globalStyles';
-import { GiCrystalBars } from 'react-icons/gi';
-import { GiCutDiamond, GiRock } from 'react-icons/gi';
+import { GoPerson } from 'react-icons/go';
 import { IconContext } from 'react-icons/lib';
 import {
   PricingSection,
   PricingWrapper,
-  PricingHeading,
-  PricingContainer,
   PricingCard,
   PricingCardInfo,
   PricingCardIcon,
   PricingCardPlan,
-  PricingCardCost,
   PricingCardLength,
-  PricingCardFeatures,
-  PricingCardFeature
 } from './Pricing.elements';
 
 function Pricing() {
@@ -23,57 +17,41 @@ function Pricing() {
     <IconContext.Provider value={{ color: '#a9b3c1', size: 64 }}>
       <PricingSection>
         <PricingWrapper>
-          <PricingHeading>Our Services</PricingHeading>
-          <PricingContainer>
-            <PricingCard to='/sign-up'>
+          <Grid container spacing={1}>
+          <Grid xs={4}>
+            <PricingCard >
               <PricingCardInfo>
                 <PricingCardIcon>
-                  <GiRock />
+                  <GoPerson />
                 </PricingCardIcon>
-                <PricingCardPlan>Starter Pack</PricingCardPlan>
-                <PricingCardCost>$99.99</PricingCardCost>
-                <PricingCardLength>per month</PricingCardLength>
-                <PricingCardFeatures>
-                  <PricingCardFeature>100 New Users</PricingCardFeature>
-                  <PricingCardFeature>$10,000 Budget</PricingCardFeature>
-                  <PricingCardFeature>Retargeting analytics</PricingCardFeature>
-                </PricingCardFeatures>
-                <Button primary>Choose Plan</Button>
+                <PricingCardPlan>Mahdi Samadov</PricingCardPlan>
+                <PricingCardLength>Captain of the Eclipse team, aerospace engineer, PR manager</PricingCardLength>
               </PricingCardInfo>
             </PricingCard>
-            <PricingCard to='/sign-up'>
+            </Grid>
+            <Grid xs={4}>
+            <PricingCard>
               <PricingCardInfo>
                 <PricingCardIcon>
-                  <GiCrystalBars />
+                  <GoPerson />
                 </PricingCardIcon>
-                <PricingCardPlan>Gold Rush</PricingCardPlan>
-                <PricingCardCost>$299.99</PricingCardCost>
-                <PricingCardLength>per month</PricingCardLength>
-                <PricingCardFeatures>
-                  <PricingCardFeature>1000 New Users</PricingCardFeature>
-                  <PricingCardFeature>$50,000 Budget</PricingCardFeature>
-                  <PricingCardFeature>Lead Gen Analytics</PricingCardFeature>
-                </PricingCardFeatures>
-                <Button primary>Choose Plan</Button>
+                <PricingCardPlan>Ilnar Khairullin</PricingCardPlan>
+                <PricingCardLength>IT programmer, aerospace engineer</PricingCardLength>
               </PricingCardInfo>
             </PricingCard>
-            <PricingCard to='/sign-up'>
+            </Grid>
+            <Grid xs={4}>
+            <PricingCard>
               <PricingCardInfo>
                 <PricingCardIcon>
-                  <GiCutDiamond />
+                  <GoPerson />
                 </PricingCardIcon>
-                <PricingCardPlan>Diamond Kings</PricingCardPlan>
-                <PricingCardCost>$999.99</PricingCardCost>
-                <PricingCardLength>per month</PricingCardLength>
-                <PricingCardFeatures>
-                  <PricingCardFeature>Unlimited Users</PricingCardFeature>
-                  <PricingCardFeature>Unlimited Budget</PricingCardFeature>
-                  <PricingCardFeature>24/7 Support</PricingCardFeature>
-                </PricingCardFeatures>
-                <Button primary>Choose Plan</Button>
+                <PricingCardPlan>Shohrukh Aminjanov</PricingCardPlan>
+                <PricingCardLength>Web-developer</PricingCardLength>
               </PricingCardInfo>
             </PricingCard>
-          </PricingContainer>
+            </Grid>
+            </Grid>
         </PricingWrapper>
       </PricingSection>
     </IconContext.Provider>
