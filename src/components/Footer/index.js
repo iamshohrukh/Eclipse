@@ -4,7 +4,8 @@ import {
   FaInstagram,
   FaEnvelope,
   FaYoutube,
-  FaPhoneAlt
+  FaPhoneAlt,
+  FaGithub
 } from 'react-icons/fa';
 import {
   FooterContainer,
@@ -37,7 +38,7 @@ export default function Footer() {
         <SocialMediaWrap>
           <WebsiteRights>ECLIPSE © 2021</WebsiteRights>
           <SocialIcons>
-            <SocialIconLink href='https://instagram.com/eclipse_sat?utm_medium=copy_link' target='_blank' aria-label='Instagram'>
+            <SocialIconLink href='https://www.instagram.com/eclipse_sat/?hl=ru' target='_blank' aria-label='Instagram'>
               <FaInstagram />
             </SocialIconLink>
             <SocialIconLink href='mailto:camsat.space@gmail.com' target='_blank' aria-label='Twitter'>
@@ -48,6 +49,9 @@ export default function Footer() {
             </SocialIconLink>
             <SocialIconLink href='https://www.youtube.com/channel/UC7sUQ1PBNEgguX2zHrqMXPg/featured' area-label='Youtube'>
               <FaYoutube />
+            </SocialIconLink>
+            <SocialIconLink href='https://github.com/razbiralochka/SolarResearchCubeSat' area-label='Github'>
+              <FaGithub />
             </SocialIconLink>
           </SocialIcons>
         </SocialMediaWrap>

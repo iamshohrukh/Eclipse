@@ -29,7 +29,7 @@ export const homeObjThree = {
   lightTextDesc: true,
   headline: "Scheme of Using Machine Learning",
   description:
-    "We have used Python and Tensorflow with Keras to learn CNN and calculate Wolf number. The result of process is it will send  15 photos for 30 minutes. Code and DataSet will available on GitHub [2]",
+    "We have used Python and Tensorflow with Keras to learn CNN and calculate Wolf number. The result of process is it will send  15 photos for 30 minutes. Code and DataSet will available on GitHub",
   imgStart: "start",
   img: require("../../images/board.png"),
   alt: "Vault",
