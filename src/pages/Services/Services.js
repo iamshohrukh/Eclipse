@@ -59,7 +59,7 @@ const Desc = styled.p`
   text-align: center;
 `;
 
-function Services() {
+export default function Services() {
   return (
     <>
       <Section>
@@ -89,4 +89,3 @@ function Services() {
   );
 }
 
-export default Services;

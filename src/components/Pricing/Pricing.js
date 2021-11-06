@@ -14,7 +14,7 @@ import {
   PricingCardLength,
 } from './Pricing.elements';
 
-function Pricing() {
+export default function Pricing() {
   return (
     <IconContext.Provider value={{ color: '#a9b3c1', size: 64 }}>
       <PricingSection>
@@ -59,4 +59,3 @@ function Pricing() {
     </IconContext.Provider>
   );
 }
-export default Pricing;

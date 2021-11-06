@@ -11,9 +11,9 @@ import {
   Img,
   // InfoSee,
   InfoSec,
-} from "./InfoSection.elements";
+} from "../../components/InfoSection/InfoSection.elements";
 
-function InfoSection({
+export default function InfoSectionBPark({
   primary,
   lightBg,
   topLine,
@@ -59,5 +59,3 @@ function InfoSection({
     </>
   );
 }
-
-export default InfoSection;

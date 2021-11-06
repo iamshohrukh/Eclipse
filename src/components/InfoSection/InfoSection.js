@@ -13,7 +13,7 @@ import {
   InfoSec
 } from './InfoSection.elements';
 
-function InfoSection({
+export default function InfoSection({
   primary,
   lightBg,
   topLine,
@@ -55,4 +55,3 @@ function InfoSection({
   );
 }
 
-export default InfoSection;

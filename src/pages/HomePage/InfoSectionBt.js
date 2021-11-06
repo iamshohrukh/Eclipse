@@ -13,7 +13,7 @@ import {
   InfoSec
 } from '../../components/InfoSection/InfoSection.elements';
 
-function InfoSectionBt({
+export default function InfoSectionBt({
   primary,
   lightBg,
   topLine,
@@ -59,5 +59,3 @@ function InfoSectionBt({
     </>
   );
 }
-
-export default InfoSectionBt;

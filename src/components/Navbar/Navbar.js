@@ -12,7 +12,7 @@ import {
 } from './Navbar.elements';
 import logo from '../../images/logo.png'
 
-function Navbar() {
+export default function Navbar() {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
@@ -48,4 +48,3 @@ function Navbar() {
   );
 }
 
-export default Navbar;

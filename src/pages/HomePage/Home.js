@@ -1,5 +1,6 @@
 import React from "react";
 import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from "./Data";
+import InfoSectionBPark from './InfoSectionBPark';
 import InfoSectionBt from "./InfoSectionBt";
 import InfoSectionBtSat from "./InfoSectionBtSat";
 import InfoSectionBtF from "./InfoSectionBtF";
@@ -22,7 +23,7 @@ const breakPoints = [
 export default function Home() {
   return (
     <>
-      <InfoSectionBt {...homeObjOne} />
+      <InfoSectionBPark {...homeObjOne} />
       <Carousel
         breakPoints={breakPoints}
         showArrows={false}

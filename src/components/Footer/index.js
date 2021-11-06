@@ -20,7 +20,7 @@ import {
   SocialIconLink
 } from './FooterElements';
 
-function Footer() {
+export default function Footer() {
   return (
     <FooterContainer>
       <FooterSubscription>
@@ -55,5 +55,3 @@ function Footer() {
     </FooterContainer>
   );
 }
-
-export default Footer;
