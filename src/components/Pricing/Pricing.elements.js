@@ -78,13 +78,14 @@ export const PricingCardInfo = styled.div`
 `;
 
 export const PricingCardIcon = styled.div`
-  margin: 24px 0;
+  margin: 14px 0;
 `;
 
 export const PricingCardPlan = styled.h3`
   color: #000;
   margin-bottom: 5px;
   font-size: 19px;
+  text-align: center;
 `;
 
 export const PricingCardCost = styled.h4`

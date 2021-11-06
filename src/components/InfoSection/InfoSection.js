@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Button } from '../../globalStyles';
+import { Container } from '../../globalStyles';
 import {
   InfoRow,
   InfoColumn,
@@ -40,11 +40,6 @@ function InfoSection({
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                <a href="https://sppgway.jhuapl.edu/" >
-                  <Button big fontBig primary={primary}>
-                    {buttonFirst}
-                  </Button>
-                </a>
               </TextWrapper>
             </InfoColumn>
             <InfoColumn>

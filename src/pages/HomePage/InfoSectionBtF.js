@@ -12,7 +12,6 @@ import {
   // InfoSee,
   InfoSec
 } from '../../components/InfoSection/InfoSection.elements';
-
 function InfoSectionBt({
   primary,
   lightBg,

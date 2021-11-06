@@ -1,7 +1,9 @@
 import { Grid } from '@material-ui/core';
 import React from 'react';
-import { GoPerson } from 'react-icons/go';
 import { IconContext } from 'react-icons/lib';
+import Sh from './shohrukh.png';  
+import Mahdi from './mahdi.jpg';  
+import Ilnar from './ilnar.png'; 
 import {
   PricingSection,
   PricingWrapper,
@@ -22,7 +24,7 @@ function Pricing() {
             <PricingCard >
               <PricingCardInfo>
                 <PricingCardIcon>
-                  <GoPerson />
+                  <img src={Mahdi} alt="Mahdi" />
                 </PricingCardIcon>
                 <PricingCardPlan>Mahdi Samadov</PricingCardPlan>
                 <PricingCardLength>Captain of the Eclipse team, aerospace engineer, PR manager</PricingCardLength>
@@ -33,7 +35,7 @@ function Pricing() {
             <PricingCard>
               <PricingCardInfo>
                 <PricingCardIcon>
-                  <GoPerson />
+                  <img src={Ilnar} alt="Ilnar" />
                 </PricingCardIcon>
                 <PricingCardPlan>Ilnar Khairullin</PricingCardPlan>
                 <PricingCardLength>IT programmer, aerospace engineer</PricingCardLength>
@@ -44,7 +46,7 @@ function Pricing() {
             <PricingCard>
               <PricingCardInfo>
                 <PricingCardIcon>
-                  <GoPerson />
+                  <img src={Sh} alt="Shohrukh" />
                 </PricingCardIcon>
                 <PricingCardPlan>Shohrukh Aminjanov</PricingCardPlan>
                 <PricingCardLength>Web-developer</PricingCardLength>

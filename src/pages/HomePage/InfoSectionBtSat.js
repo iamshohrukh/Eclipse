@@ -1,5 +1,5 @@
-import React from 'react';
-import { Container, Button } from '../../globalStyles';
+import React from "react";
+import { Container, Button } from "../../globalStyles";
 import {
   InfoRow,
   InfoColumn,
@@ -10,9 +10,9 @@ import {
   ImgWrapper,
   Img,
   // InfoSee,
-  InfoSec
-} from '../../components/InfoSection/InfoSection.elements';
-
+  InfoSec,
+} from "../../components/InfoSection/InfoSection.elements";
+import { useHistory } from "react-router-dom";
 function InfoSectionBt({
   primary,
   lightBg,
@@ -26,13 +26,19 @@ function InfoSectionBt({
   img,
   alt,
   imgStart,
-  
-  start
+
+  start,
 }) {
+  let history = useHistory();
+
+  const redirect = () => {
+    history.push("/satellite");
+  };
+
   return (
     <>
       {/* <InfoSee> */}
-        <InfoSec  lightBg={lightBg}>
+      <InfoSec lightBg={lightBg}>
         <Container>
           <InfoRow imgStart={imgStart}>
             <InfoColumn>
@@ -40,11 +46,11 @@ function InfoSectionBt({
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                <a href="https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v11.html?title=true&access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA#4.34/40.02/73.7" >
-                  <Button big fontBig primary={primary}>
-                    {buttonFirst}
-                  </Button>
-                </a>
+                {/* <a href="https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v11.html?title=true&access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA#4.34/40.02/73.7"> */}
+                <Button big fontBig primary={primary} onClick={redirect}>
+                  {buttonFirst}
+                </Button>
+                {/* </a> */}
               </TextWrapper>
             </InfoColumn>
             <InfoColumn>
@@ -54,7 +60,7 @@ function InfoSectionBt({
             </InfoColumn>
           </InfoRow>
         </Container>
-        </InfoSec>
+      </InfoSec>
       {/* </InfoSee> */}
     </>
   );
